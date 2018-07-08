@@ -3,12 +3,12 @@
 #include <string.h>
 #include <stdio.h>
 
-#include "sha3/sph_blake.h"
-#include "sha3/sph_bmw.h"
-#include "sha3/sph_groestl.h"
-#include "sha3/sph_jh.h"
-#include "sha3/sph_keccak.h"
-#include "sha3/sph_skein.h"
+#include "sph_blake.h"
+#include "sph_bmw.h"
+#include "sph_groestl.h"
+#include "sph_jh.h"
+#include "sph_keccak.h"
+#include "sph_skein.h"
 
 
 void quark_hash(const void* input, size_t input_len, void* output)

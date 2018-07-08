@@ -1,11 +1,10 @@
 package quarkhash
 
-//go:generate make
+// +build cgo
 
 /*
 #include <stdlib.h>
 #include "quarkhash.h"
-#cgo LDFLAGS: -L. -lsha3
 */
 import "C"
 

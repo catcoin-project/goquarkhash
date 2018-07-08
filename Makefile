@@ -1,5 +1,5 @@
 CFLAGS=-Wall -O3
-SRCS=sha3/aes_helper.c sha3/blake.c sha3/bmw.c sha3/groestl.c sha3/jh.c sha3/keccak.c sha3/skein.c
+SRCS=aes_helper.c blake.c bmw.c groestl.c jh.c keccak.c skein.c
 OBJS=$(SRCS:%.c=%.o)
 CGOFILES=quarkhash.go
 
