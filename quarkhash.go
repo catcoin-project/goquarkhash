@@ -20,7 +20,7 @@ func QuarkHash(input []byte) []byte {
 	coutput := C.CBytes(make([]byte, 32))
 	defer C.free(unsafe.Pointer(coutput))
 
-	C.quark_hash(cinput, C.ulong(len(input)), coutput)
+	C.quark_hash(cinput, C.ulonglong(len(input)), coutput)
 
 	return C.GoBytes(coutput, 32)
 }
